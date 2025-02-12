@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
     <title>Хижина провидца</title>
-    <script src="/sdk.js"></script>
+    <script src="https://sdk.games.s3.yandex.net/sdk.js"></script>
     <script>
-        YaGames.init().then(ysdk => {
-            console.log(ysdk)
-        });
-    </script>  <script type="module" crossorigin src="./assets/index-BzSgcVm5.js"></script>
+        YaGames
+            .init()
+            .then(ysdk => {
+                console.log('Yandex SDK initialized');
+                window.ysdk = ysdk;
+            });
+    </script>
+  <script type="module" crossorigin src="./assets/index-BZP696BH.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-tn0RQdqM.css">
 </head>
 
